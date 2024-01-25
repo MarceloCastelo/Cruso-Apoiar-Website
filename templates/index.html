@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../static/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header
+      class="text-gray-600 body-font shadow-md fixed top-0 w-full bg-white"
+    >
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="ml-3 text-xl font-bold text-gray-900 hover:text-blue-500 flex justify-center"
+          href="/"
+        >
+          <div class="pr-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
+              />
+              <path
+                d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
+              />
+              <path
+                d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
+              />
+            </svg>
+          </div>
+          Curso Apoiar</a
+        >
+
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a class="mr-5 hover:text-blue-500" href="#sobre-nos">Sobre nós</a>
+          <a class="mr-5 hover:text-blue-500" href="#o-espaco">O espaço</a>
+          <a class="mr-5 hover:text-blue-500" href="#nossa-equipe"
+            >Nossa equipe</a
+          >
+          <a class="mr-5 hover:text-blue-500" href="#localizacao-contato"
+            >Localização e contato</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- HERO -->
+    <section
+      id="sobre-nos"
+      class="text-gray-600 body-font bg-gradient-to-r from-sky-600 to-blue-500"
+    >
+      <div
+        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center flow-root"
+        >
+          <h1 class="sm:text-5xl text-3xl mb-4 font-bold text-white">
+            Sobre nós
+          </h1>
+          <p class="mb-8 leading-relaxed text-gray-200 text-justify">
+            Somos uma renomada banca de estudos e cursos localizada na
+            Imbiribeira, em Recife. Nosso compromisso é atender todas as idades
+            e objetivos, oferecendo serviços personalizados, desde reforço
+            escolar até preparação para o ENEM e ingresso nas universidades.
+            Conquiste seus sonhos educacionais conosco. Seja bem-vindo ao lugar
+            onde o conhecimento transforma vidas!
+          </p>
+          <p class="mb-8 leading-relaxed font-bold text-gray-100">
+            Descubra o caminho para o sucesso acadêmico conosco!
+          </p>
+          <div class="">
+            <button
+              class="text-white bg-blue-800 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-500 rounded text-lg"
+              onclick="enviarWhatsapp()"
+            >
+              Faça sua matrícula!
+            </button>
+          </div>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 shadow-md">
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="../static/images/logo1.jpg"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- GALERIA -->
+    <section id="o-espaco" class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="flex w-full mb-20 flex-wrap">
+          <h1
+            class="sm:text-4xl text-2xl font-bold title-font text-blue-500 lg:w-1/3 lg:mb-0 mb-4 text-center flex justify-center items-center"
+          >
+            NOSSO ESPAÇO
+          </h1>
+          <p
+            class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base text-center text-justify"
+          >
+            Explore nosso espaço em constante expansão, projetado para otimizar
+            sua experiência de aprendizado. Contamos com novas salas
+            individuais, proporcionando um ambiente exclusivo e focado no seu
+            desenvolvimento acadêmico.
+          </p>
+        </div>
+        <div class="flex flex-wrap md:-m-2 -m-1">
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="../static/images/aula02.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="../static/images/aula01.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block"
+                src="../static/images/aula04.jpg"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block"
+                src="../static/images/aula06.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="../static/images/aula07.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="../static/images/aula03.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTEMUNHAS -->
+    <section class="text-black body-font" id="yellowBackground">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+            <div class="h-full text-center">
+              <img
+                alt="testimonial"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="https://dummyimage.com/302x302"
+              />
+              <p class="leading-relaxed text-justify">
+                Edison bulb retro cloud bread echo park, helvetica stumptown
+                taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
+                ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
+                adaptogen squid fanny pack vaporware.
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-blue-500 mt-6 mb-4"
+              ></span>
+              <h2 class="text-blue-900 font-bold text-lg">HOLDEN CAULFIELD</h2>
+              <p class="text-blue-700">Ex-Aluno</p>
+            </div>
+          </div>
+          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+            <div class="h-full text-center">
+              <img
+                t="testimonial"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="../static/images/depoimentos/Adelma.png"
+              />
+              <p class="leading-relaxed text-justify">
+                "Que bom que posso contar com excelentes professores, meu filho
+                teve uma evolução incrível no curso Apoiar!"
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-blue-500 mt-6 mb-4"
+              ></span>
+              <h2 class="text-blue-900 font-bold text-lg">ADELMA LIMA</h2>
+              <p class="text-blue-800">Mãe de aluno</p>
+            </div>
+          </div>
+          <div class="lg:w-1/3 lg:mb-0 p-4">
+            <div class="h-full text-center">
+              <img
+                alt="testimonial"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="https://dummyimage.com/305x305"
+              />
+              <p class="leading-relaxed text-justify">
+                Edison bulb retro cloud bread echo park, helvetica stumptown
+                taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
+                ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
+                adaptogen squid fanny pack vaporware.
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-blue-500 mt-6 mb-4"
+              ></span>
+              <h2 class="text-blue-900 font-bold text-lg">HENRY LETHAM</h2>
+              <p class="text-blue-800">Aluno</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NOSSO TIME -->
+    <section id="nossa-equipe" class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1
+            class="sm:text-3xl text-2xl font-bold title-font mb-4 text-blue-500"
+          >
+            NOSSA EQUIPE
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-justify">
+            Conheça a excelência da nossa equipe! Contamos com um grupo de
+            professores altamente capacitados, comprometidos em fornecer a mais
+            alta qualidade de ensino. Aqui, a dedicação dos nossos educadores se
+            reflete no sucesso dos nossos alunos.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="../static/images/professores/Giselle.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 title-font font-medium">
+                  Giselle Ferreira
+                </h2>
+                <p class="text-gray-500">Prof. Matemática</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="../static/images/professores/Marcelo.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 title-font font-medium">
+                  Marcelo Castelo
+                </h2>
+                <p class="text-gray-500">Prof. Pedagogia</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="../static/images/professores/Katarina.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 title-font font-medium">
+                  Katarina Ferreira
+                </h2>
+                <p class="text-gray-500">Prof. Pedagogia</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="../static/images/professores/Hugo.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 title-font font-medium">Hugo Oliveira</h2>
+                <p class="text-gray-500">Prof. Química</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://dummyimage.com/94x94"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 title-font font-medium">
+                  Louise Victoria
+                </h2>
+                <p class="text-gray-500">Prof. Pedagogia</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://dummyimage.com/98x98"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 title-font font-medium">
+                  Jefferson Piaf
+                </h2>
+                <p class="text-gray-500">Prof. Português</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://dummyimage.com/100x90"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 title-font font-medium">
+                  Sérgio Luis
+                </h2>
+                <p class="text-gray-500">Prof. Geografia</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://dummyimage.com/104x94"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 title-font font-medium">
+                  Walter Matheus
+                </h2>
+                <p class="text-gray-500">Prof. Pedagogia</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                src="https://dummyimage.com/108x98"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 title-font font-medium">
+                  Juliana Tavares
+                </h2>
+                <p class="text-gray-500">Prof. Biologia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao-contato" class="text-gray-600 body-font relative">
+      <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+        <div
+          class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
+        >
+          <iframe
+            width="100%"
+            height="100%"
+            class="absolute inset-0"
+            frameborder="0"
+            title="map"
+            marginheight="0"
+            marginwidth="0"
+            scrolling="no"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0905506601507!2d-34.915729524221106!3d-8.09224808092601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fd766ca4a17%3A0x7d2aafa1ba56c1f5!2sBanca%20E%20Curso%20Apoiar!5e0!3m2!1spt-BR!2sbr!4v1705438262770!5m2!1spt-BR!2sbr"
+          ></iframe>
+          <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+            <div class="lg:w-1/2 px-6">
+              <h2
+                class="title-font font-semibold text-gray-900 tracking-widest text-xs"
+              >
+                ENDEREÇO
+              </h2>
+              <p class="mt-1">
+                R. Eng. José Brandão Cavalcante, 458b - Imbiribeira, Recife -
+                PE, 51170-135
+              </p>
+            </div>
+            <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+              <h2
+                class="title-font font-semibold text-gray-900 tracking-widest text-xs"
+              >
+                EMAIL
+              </h2>
+              <a class="text-indigo-500 leading-relaxed">example@email.com</a>
+              <h2
+                class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4"
+              >
+                CONTATO
+              </h2>
+              <p class="leading-relaxed">+55 81 8843-3838</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 rounded bg-white p-4"
+        >
+          <h2
+            class="text-gray-900 text-lg mb-1 font-bold title-font text-center"
+          >
+            FAÇA SUA MATRÍCULA
+          </h2>
+
+          <p class="leading-relaxed mb-5 text-gray-600 text-justify">
+            Simples e rápido! Agora, através do nosso link no WhatsApp, você
+            pode iniciar uma conversa direta com a nossa equipe de agendamento e
+            matrícula. Estamos prontos para atender suas dúvidas, fornecer
+            informações detalhadas e ajudar no processo de matrícula. Conecte-se
+            conosco instantaneamente, facilitando o caminho para alcançar seus
+            objetivos educacionais. Clique no link do WhatsApp e inicie sua
+            jornada conosco. Estamos aqui para tornar o seu acesso à educação
+            mais ágil e personalizado!
+          </p>
+
+          <button
+            class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg flex justify-center"
+            onclick="enviarWhatsapp()"
+          >
+            Entrar em contato
+            <div class="pl-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 0 0-1.032-.211 50.89 50.89 0 0 0-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 0 0 2.433 3.984L7.28 21.53A.75.75 0 0 1 6 21v-4.03a48.527 48.527 0 0 1-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979Z"
+                />
+                <path
+                  d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 0 0 1.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0 0 15.75 7.5Z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="text-black body-font bg-white">
+        <div
+          class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+        >
+          <a
+            class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+          >
+            <a class="ml-3 text-xl font-medium hover:text-blue-500" href="/"
+              >Banca e Curso - Apoiar</a
+            >
+          </a>
+          <p
+            class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-100 sm:py-2 sm:mt-0 mt-4"
+          >
+            © 2024 Giselle Ferreira —
+            <a
+              href="https://twitter.com/knyttneve"
+              class="ml-1"
+              rel="noopener noreferrer"
+              target="_blank"
+              >+55 81 9804-0490</a
+            >
+          </p>
+          <span
+            class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+          >
+            <a
+              class="hover:text-blue-500"
+              href="https://web.facebook.com/bancaecursoapoiar/photos?locale=pt_BR"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                htef
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="ml-3 hover:text-blue-500"
+              href="https://www.instagram.com/bancaecursoapoiar/"
+              target="_blank"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="ml-3 hover:text-blue-500"
+              href="https://www.linkedin.com/in/giselle-ferreira-07a9621a9/"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+    </section>
+
+    <script src="./../static/js/script.js"></script>
+  </body>
+</html>

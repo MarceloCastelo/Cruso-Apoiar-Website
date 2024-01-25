@@ -12,5 +12,5 @@ O site é feito em HTML, JS e CSS, utilizando o framework Flask em python para r
 ## 💡 Expressões de gratidão
 
 * Obrigado por visitar esse repositório!
-* Para suporte, mande um email para marcelo.cbo2000@gmail.com.
+* Para suporte, mande um email para castelobranco.dev@gmail.com.
 * [Meu linkedin](https://www.linkedin.com/in/marcelocastelo/)
